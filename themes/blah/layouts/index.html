@@ -1,0 +1,6 @@
+<h1> blah/layouts/index.html </h1>
+
+{{ $main := resources.Get "main.sass" | toCSS }}
+when changing <tt>themes/blah/static/assets/main.sass</tt> the
+following won't change unless hugo serve is ^C and restarted:
+<a href="{{ $main.RelPermalink }}"> {{ $main.RelPermalink }}</a>

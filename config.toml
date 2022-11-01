@@ -1,0 +1,13 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = 'My New Hugo Site'
+theme = 'blah'
+
+[module]
+[[module.mounts]]
+  source = 'themes/blah/static/assets'
+  target = 'assets'
+[[module.mounts]]
+  source = 'assets'
+  target = 'assets'
+
